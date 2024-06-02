@@ -1,0 +1,29 @@
+<body >
+    <h1>Sign into your account: </h1>
+    <div id="content">
+        <form>
+            <mat-form-field>
+              <input matInput placeholder="Email address" formControlName="email" />
+              <!-- <mat-error *ngIf="email?.errors?.['required']">
+                Email address is required
+              </mat-error> -->
+              <!-- <mat-error *ngIf="email?.errors?.['email']">
+                Please enter a valid email address
+              </mat-error> -->
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput type="password" placeholder="Password" formControlName="password" />
+              <!-- <mat-error *ngIf="password?.errors?.['required']">
+                Password is required
+              </mat-error> -->
+            </mat-form-field>
+
+            <div class="center margin-top">
+                <button mat-raised-button (click)="submit()" color="primary">Sign in</button>
+            </div>
+
+            <span class="center margin-top">New to our platform? <a href="/random-champion">Sign up!</a></span>
+          </form>
+    </div>
+</body>
